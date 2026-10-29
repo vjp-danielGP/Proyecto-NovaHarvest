@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NovaHarvest.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+070118eff16cf9ebdcfb17a5dceaa8ce19b62285")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa81b1e83e2a99f2b5f66095134556a9008af609")]
 [assembly: System.Reflection.AssemblyProductAttribute("NovaHarvest.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NovaHarvest.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
