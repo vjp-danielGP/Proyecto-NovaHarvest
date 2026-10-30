@@ -18,7 +18,6 @@ C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\n
 C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\net10.0\scopedcss\bundle\NovaHarvest.Web.styles.css
-C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\net10.0\compressed\sbv0ocqya1-{0}-n9rd1o749h-n9rd1o749h.gz
 C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\net10.0\staticwebassets.development.json
@@ -29,3 +28,4 @@ C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\n
 C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\net10.0\NovaHarvest.Web.pdb
 C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\net10.0\NovaHarvest.Web.genruntimeconfig.cache
 C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\net10.0\ref\NovaHarvest.Web.dll
+C:\Users\alumno.DAM2-08\DWES\novaharvest-web\backend\NovaHarvest.Web\obj\Debug\net10.0\compressed\sbv0ocqya1-{0}-zrezzsdibn-zrezzsdibn.gz
