@@ -4,6 +4,45 @@ body {
   margin: 2rem;
   color: #24292f;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+header h2 {
+  color: #1a7f37;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav a {
+  color: #1a7f37;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 h1 {
   color: #1a7f37;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  color: #666;
 }
