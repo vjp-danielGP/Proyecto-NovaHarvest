@@ -10,7 +10,7 @@ $"""
 <head>
     <meta charset="UTF-8">
     <title>NovaHarvest - Inicio</title>
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/sites.css">
 </head>
 <body>
     <header>
@@ -45,7 +45,7 @@ $"""
 <head>
     <meta charset="UTF-8">
     <title>NovaHarvest - Acerca de</title>
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/sites.css">
 </head>
 <body>
     <header>
@@ -81,7 +81,7 @@ $"""
 <head>
     <meta charset="UTF-8">
     <title>NovaHarvest - Estado del servidor</title>
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/sites.css">
 </head>
 <body>
     <header>
