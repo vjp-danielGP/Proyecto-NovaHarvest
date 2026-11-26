@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\alumno.DAM2-08\\.nuget\\packages\\": {}
+    "C:\\Users\\Daniel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alumno.DAM2-08\\DWES\\novaharvest-web\\backend\\NovaHarvest.Web\\NovaHarvest.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Daniel\\DWES\\Proyecto\\Proyecto-NovaHarvest\\backend\\NovaHarvest.Web\\NovaHarvest.Web.csproj",
       "projectName": "NovaHarvest.Web",
-      "projectPath": "C:\\Users\\alumno.DAM2-08\\DWES\\novaharvest-web\\backend\\NovaHarvest.Web\\NovaHarvest.Web.csproj",
-      "packagesPath": "C:\\Users\\alumno.DAM2-08\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alumno.DAM2-08\\DWES\\novaharvest-web\\backend\\NovaHarvest.Web\\obj\\",
+      "projectPath": "C:\\Users\\Daniel\\DWES\\Proyecto\\Proyecto-NovaHarvest\\backend\\NovaHarvest.Web\\NovaHarvest.Web.csproj",
+      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Daniel\\DWES\\Proyecto\\Proyecto-NovaHarvest\\backend\\NovaHarvest.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alumno.DAM2-08\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -70,7 +70,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.404/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
