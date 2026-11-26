@@ -98,3 +98,27 @@ Cuando un usuario accede a NovaHarvest desde el navegador, la petición sigue es
 4. El backend recibe la petición a través de Kestrel, que escucha en el puerto 8080 del contenedor.
 5. ASP.NET Core ejecuta el código C# correspondiente a la ruta solicitada y prepara la página HTML que se va a mostrar.
 6. Por último, el backend devuelve la respuesta a nginx, que se encarga de enviarla de vuelta al navegador.
+
+## 3. Páginas
+
+NovaHarvest utiliza Razor Pages para organizar las distintas páginas de la aplicación. Cada página tiene un archivo `.cshtml`, donde se define el contenido HTML y Razor, y algunas cuentan también con un archivo `.cshtml.cs`, que contiene la lógica C# mediante un `PageModel`.
+
+### Tabla de páginas
+
+| URL | Archivo `.cshtml` | PageModel | Función |
+|---|---|---|---|
+| `/` | `Pages/Index.cshtml` | No tiene | Página de inicio. |
+| `/About` | `Pages/About.cshtml` | No tiene | Muestra información del proyecto, el centro educativo, el autor y los datos de contacto. |
+| `/Status` | `Pages/Status.cshtml` | `Pages/Status.cshtml.cs` (`StatusModel`) | Muestra la fecha y hora del servidor, su nombre y el número de visitas desde que se inició la aplicación. |
+| `/Surplus` | `Pages/Surplus.cshtml` | `Pages/Surplus.cshtml.cs` (`SurplusModel`) | Muestra un excedente agrícola destacado, con información del productor, fechas, precios, kilos disponibles y estado del producto. |
+| `/ticket` | `Pages/Ticket.cshtml` | No tiene | Genera un justificante de reserva con los datos del producto, los kilos, el lugar de recogida y la fecha de generación. |
+
+### Ficheros especiales de Pages
+
+Dentro de la carpeta `Pages` hay varios ficheros especiales:
+
+- **`_ViewImports.cshtml`:** Define las directivas globales (como `@using`) que se importan automáticamente en todas las vistas `.cshtml` sin tener que repetirlas en cada archivo.
+
+- **`_ViewStart.cshtml`:** establece el diseño general que utilizarán las páginas mediante `Layout = "_Layout"`. Así, todas pueden compartir una misma estructura sin tener que repetirla. Esto se puede anular con `Layout = null`.
+
+- **`Shared/_Layout.cshtml`:** Es la plantilla maestra que define la estructura HTML común a toda la web (cabecera, menú de navegación, pie de página y hojas de estilo). Utiliza `@RenderBody()` para insertar el contenido específico de cada página y `@inject IWebHostEnvironment Env` para obtener la información del entorno de ejecución.
