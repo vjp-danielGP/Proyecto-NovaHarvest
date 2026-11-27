@@ -147,7 +147,7 @@ En cambio, `@novaharvest` comienza directamente por `@`, por lo que Razor puede 
 
 Al cambiar el nombre de la propiedad, al ejecutar `dotnet build` aparece un error de compilación porque `SurplusPrize` no existe en el modelo `SurplusModel`.
 
-![Error-SurplusPrize](/Proyecto-NovaHarvest/cuestiones-teoricas/capturas/ErrorEjercicio4-Model.SurplusPrize.PNG)
+![Error-SurplusPrize](capturas/ErrorEjercicio4-Model.SurplusPrize.PNG)
 
 El error indica que `SurplusModel` no contiene una definición para `SurplusPrize`.
 
@@ -169,7 +169,7 @@ El proyecto sí compila, pero el HTML generado muestra algo parecido a esto:
 <p>Precio de excedente: 3,20 € * 0.7m</p>
 ```
 
-![Error-SurplusPrize](/Proyecto-NovaHarvest/cuestiones-teoricas/capturas/ErrorEjercicio4-Model.Surplus.PricePerKgx0.7m.PNG)
+![Error-SurplusPrize](capturas/ErrorEjercicio4-Model.Surplus.PricePerKgx0.7m.PNG)
 
 **¿Por qué compila aunque el resultado esté mal?**
 
@@ -223,7 +223,7 @@ El atributo `disabled` depende de `Model.IsSoldOut`:
 
 **Escenario A: Ningún cambio**
 
-![EscenarioA](/Proyecto-NovaHarvest/cuestiones-teoricas/capturas/Ejercicio5-EscenarioA.PNG)
+![EscenarioA](capturas/Ejercicio5-EscenarioA.PNG)
 
 Están los valores originales. Hay 223 kg disponibles y quedan 5 días para consumir el producto.
 
@@ -238,7 +238,7 @@ No tiene la clase urgente y tampoco aparece el botón disabled porque hay existe
 
 **Escenario C: ReservedKg = 343**
 
-![EscenarioC](/Proyecto-NovaHarvest/cuestiones-teoricas/capturas/Ejercicio5-EscenarioC.PNG)
+![EscenarioC](capturas/Ejercicio5-EscenarioC.PNG)
 
 No quedan kilos disponibles, por lo que hay 0 cajas y 0 kg sueltos. El valor del excedente es de 0,00 € y el estado es Agotado.
 
@@ -256,7 +256,7 @@ El botón aparece deshabilitado porque `Model.IsSoldOut` es igual a true. El ele
 
 **Escenario D: HarvestDate = DateTime.Today.AddDays(-6)**
 
-![EscenarioD](/Proyecto-NovaHarvest/cuestiones-teoricas/capturas/Ejercicio5-EscenarioD.PNG)
+![EscenarioD](capturas/Ejercicio5-EscenarioD.PNG)
 
 Queda solo un día para consumirlo, por lo que el parrafo tiene la clase urgent.
 
@@ -300,7 +300,7 @@ La directiva `@namespace` establece el espacio de nombres que utilizarán las p�
 
 Al quitar esta directiva y ejecutar `dotnet build`, aparece el siguiente error:
 
-```text id="0p3q1w"
+```text
 C:\Users\Daniel\DWES\Proyecto\Proyecto-NovaHarvest\backend\NovaHarvest.Web\Pages\_ViewImports.cshtml(2,24): error CS0234: El tipo o el nombre del espacio de nombres 'Pages' no existe en el espacio de nombres 'NovaHarvest.Web' (¿falta alguna referencia de ensamblado?)
 ```
 
@@ -421,7 +421,7 @@ Sustituyo temporalmente el contador por una variable local dentro de `Status.csh
 
 Al recargar varias veces la página, el contador siempre muestra `1`.
 
-![EscenarioD](/Proyecto-NovaHarvest/cuestiones-teoricas/capturas/Ejercicio9-VistasVariableLocal.PNG)
+![EscenarioD](capturas/Ejercicio9-VistasVariableLocal.PNG)
 
 Esto ocurre porque la variable local se crea cada vez que se procesa la página. Esto hace que el contador nunca pueda ser diferente a 1.
 
