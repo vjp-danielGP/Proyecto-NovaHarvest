@@ -12,6 +12,36 @@ Cuando el usuario accede a `/surplus`, ASP.NET Core ejecuta el código generado 
 
 Por último, el servidor envía ese HTML al navegador, que lo interpreta y muestra la página.
 
+### 2. Código generado de `Status.cshtml`
+
+Primero ejecuto este comando:
+
+```bash
+dotnet build -p:EmitCompilerGeneratedFiles=true
+```
+
+Después busco el archivo generado de `Status.cshtml` en la carpeta `obj`.
+
+**WriteLiteral:**
+
+```csharp
+WriteLiteral("\r\n<h1>Estado del servidor</h1>\r\n<p>Fecha y hora del servidor: ");
+```
+
+Esta instrucción viene del HTML escrito directamente en `Status.cshtml`. Se encarga de escribir las etiquetas `<h1>`, `<p>` y el texto que aparece antes de la expresión Razor.
+
+**Write:**
+
+```csharp
+Write(Model.ServerTime.ToString("dd/MM/yyyy HH:mm:ss")
+```
+
+Esta instrucción viene de la expresión `@Model.ServerTime.ToString("dd/MM/yyyy HH:mm:ss")` del archivo `.cshtml`. Se encarga de escribir el resultado de esa expresión, es decir, la fecha y hora del servidor con el formato indicado.
+
+### 3. ¿Por qué no hay ningún `.cshtml` dentro del contenedor?
+
+Porque los archivos `.cshtml` se procesan y compilan antes de ejecutar la aplicación. Basicamente su código generado forma parte de la aplicación compilada.
+
 ## 2. Tecnologías
 
 En mi página `Surplus.cshtml`, la línea que muestra el precio del excedente es:
